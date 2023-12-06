@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="js/object-movements.js"></script>
+    <script src="js/tonejs-instruments/Tonejs-Instruments.js"></script>
+    <script src="https://tonejs.github.io/build/Tone.js"></script>
+
+    <div id="spacer"></div>
+
+    <p>hi! welcome to muscial scenes. have fun and enjoy creating!</p>
+
+    <div id="spacer"></div>
+
+    <div id="backgroundContainer">
+        <img src="images/background.jpg">
+    </div>
+    
+    <div id="plane"><img src="images/plane.png" width="400" height="137"></div>
+
+    <div class="flower" id="singleFlower">
+        <img src="images/single-flower.png" height="130">
+        <div class="tooltip"><span class="tooltiptext">synth</span></div>
+    </div>
+
+    <div class="flower" id="doubleFlower">
+        <img src="images/double-flower.png" height="130">
+        <div class="tooltip"><span class="tooltiptext">piano</span></div>
+    </div>
+
+    <div class="flower" id="orangeFlower">
+        <img src="images/orange-flower.png" height="130">
+        <div class="tooltip"><span class="tooltiptext">guitar</span></div>
+    </div>
+
+    <div class="flower" id="purpleFlower">
+        <img src="images/purple-flower.png" height="130">
+        <div class="tooltip"><span class="tooltiptext">violin</span></div>
+    </div>
+
+    <div>
+        <button id="start">start scene</button>
+        <button id="stop">stop scene</button>
+        <button id="addnew">add flower</button> 
+        <button id="reset">reset scene</button> 
+
+        <input id="remove" type="checkbox"/>
+        <label for="remove" class="checkbox-text">delete mode</label>
+    </div>      
+
+   <p id="deleting">currently deleting</p>
+    
+</body>
+</html>

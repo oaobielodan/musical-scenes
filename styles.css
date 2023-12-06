@@ -1,0 +1,102 @@
+/*We have already set the text-align property as center in the HTML code. Below provided CSS is added just to make the output look better.*/
+body {
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+    color: #33475b;
+}
+
+p {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+#deleting {
+    font-weight: bold;
+    color: red;
+    font-size: xx-large;
+    visibility: hidden;
+}
+
+#spacer {
+    height: 5px;
+}
+
+#backgroundContainer {
+    position: relative;
+    align-items: center;
+}
+
+#singleFlower {
+    position: absolute;
+    left: 150px; 
+    display: flex;
+}
+
+#singleFlower:hover {
+    border: 3px solid #d0d0d0;
+}
+
+#doubleFlower {
+    position: absolute;
+    left: 250px; 
+    display: flex;
+}
+
+#doubleFlower:hover {
+    border: 3px solid #d0d0d0;
+}
+
+#orangeFlower {
+    position: absolute;
+    left: 388px; 
+    display: flex;
+}
+
+#orangeFlower:hover {
+    border: 3px solid #d0d0d0;
+}
+
+#purpleFlower {
+    position: absolute;
+    left: 518px; 
+    display: flex;
+}
+
+#purpleFlower:hover {
+    border: 3px solid #d0d0d0;
+}
+
+#plane {
+    position: absolute;
+    left: 1500px; 
+    top: 100px;  
+    display: flex;
+}
+
+.clicked {
+    border: 3px solid #454545;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.flower:hover .tooltiptext {
+    visibility: visible;
+}
