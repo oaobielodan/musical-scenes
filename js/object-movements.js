@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let animation;
     let deleting = false;
     let planeStyle = getComputedStyle(plane);
-
+    
     // initialize instruments
     const synth = new Tone.PolySynth().toDestination();
     const piano = SampleLibrary.load({instruments: "piano"}).toDestination();
@@ -50,17 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (type.includes("orange")){
             guitar.triggerAttackRelease(note, "4n");
         }
-    }
-
-    // functions to show what instrumnet is going to be selected
-    function showTooltip() {
-        const tooltip = document.querySelector(".tooltip");
-        tooltip.style.display = "block";
-    }
-
-    function hideTooltip() {
-        const tooltip = document.querySelector(".tooltip");
-        tooltip.style.display = "none";
     }
 
 
