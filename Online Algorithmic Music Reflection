@@ -1,0 +1,27 @@
+Online Algorithmic Music Reflection 
+
+For my project, I created a “musical scene”. This idea was inspired by games such as Incredibox and My Singing Monsters. The initial idea was that there would be some sort of background that you would put elements into (such as plane or an animal or a plant). When the scene was “played”, the elements would move. What music was played based on the speed of those movements, sizes of the elements, position of the elements, etc. The final deliverable was a slight variation on this. 
+
+When working on getting music to play based on the element movements, Professor Briz pointed out that with the way I was implementing it, the notes would be playing continuously, and there would be no melody. So we revised the plan, and now the created scene will be a field of flowers that a plane will fly over. The y-position of the flower is mapped to a specific note, where the higher a flower is on the field, the lower its pitch, and the lower the flower is on the filed, the higher its pitch. The flower’s x-position determines when that note will be played (by the plane flying over it). Finally, the different types of flowers correspond to different instruments. The current implementation has 4 instruments: synth, piano, guitar, violin. 
+
+The biggest challenge of this project was getting the scene to respond to what the user wanted. Things like, adding more flowers and being able to actually move all of those flowers once they were on the screen posed some difficulty. When I first got the flower movement to work, I was rendering the scene with the flower already in it. However, as I moved on to trying to letting the user add flowers by themselves, those flowers were not able to be dragged around the scene. I eventually was able to get the first flower added to the scene to move around, but subsequent flowers would not. It took some time, but I was able to figure out how to fix it!
+
+Another challenge was getting the flowers to move within a certain boundary. In addition to wanting the flowers to stay on the flied (so no floating flowers !!), if the plane crosses the over a flower placed at the same y-value, the scene break, and you would have to resort the program. In order to get around that, I made sure that the flowers could only be moved within a certain boundary. This also helped with deciding how to add flowers to the scene. My original idea was going to be a drag and drop from the outside of the screen into that boundary. However, I found that selecting a flower and having it pop up already within the boundary made requiring the image to stay inside the boundary a much easier task. It also enabled me to have two separate list of flowers, making know what flowers are part of the scene and need to be played, deleted, moved, etc. an easier note and differentiate from the instrument selector flowers.
+
+For further development, I would like to add some sort of tempo controller (maybe allowing for increasing the speed of the plane) and would also like to add a way to play different types of notes (a whole note or a half note for example). 
+
+references:
+- https://github.com/nbrosowsky/tonejs-instruments (instruments)
+
+- https://www.worldanvil.com/w/harrian-hass-kaithea/followers (background)
+- https://pngtree.com/freepng/single-flower-illustration_8703688.html (single flower)
+- https://pngtree.com/freepng/aesthetic-floral-journal_8871868.html (double flower)
+- https://pngtree.com/freepng/orange-wild-flowers_8734949.html (purple flower)
+- https://pngtree.com/freepng/orange-wild-flowers_8734949.html (orange)
+- https://www.cleanpng.com/png-narrow-body-aircraft-wide-body-aircraft-airline-fl-245477/download-png.html (plane)
+
+- For adding images: https://alto-palo.com/blogs/how-to-add-dynamic-images-in-html-using-javascript, https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement, https://www.w3schools.com/jsref/met_element_setattribute.asp
+- For dragging images: https://www.w3schools.com/howto/howto_js_draggable.asp
+- For adding a tooltip: https://www.w3schools.com/css/css_tooltip.asp#:~:text=HTML%3A%20Use%20a%20container%20element,with%20class%3D%22tooltiptext%22%20.
+
+- Chat GPT: https://chat.openai.com/share/b122b8d3-f982-4a6a-971b-397658c17adb
