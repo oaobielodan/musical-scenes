@@ -2,8 +2,6 @@
 
 **link to published site:** https://oaobielodan.github.io/musical-scenes/
 
-**link to personal website:** https://oaobielodan.github.io/personal-website/
-
 **background:**
 
 For this project, I created a “musical scene”. Musical Scenes was inspired by interactive music games like Incredibox and My Singing Monsters, where users build unique soundscapes by combining predesigned elements. The original concept was for a sandbox environment where players could place various objects (e.g. planes, animals, or plants) into a scene. During playback, these elements would be animated, and their speed, size, and position would dynamically influence the musical output. The final deliverable is a more focused variation of this concept.
@@ -17,3 +15,5 @@ When working on getting music to play based on the element movements, my profess
 - https://pngtree.com/freepng/orange-wild-flowers_8734949.html (purple flower)
 - https://pngtree.com/freepng/orange-wild-flowers_8734949.html (orange)
 - https://www.cleanpng.com/png-narrow-body-aircraft-wide-body-aircraft-airline-fl-245477/download-png.html (plane)
+
+**link to personal website:** https://oaobielodan.github.io/personal-website/
